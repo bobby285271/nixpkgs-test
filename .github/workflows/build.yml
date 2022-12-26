@@ -1,0 +1,13 @@
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: cachix/install-nix-action@v17
+      - run: nix-build -A gtk3 https://github.com/NixOS/nixpkgs/archive/2f1b23099deed64a613776deb99a42e71344ca26.tar.gz
+      - run: ./result/bin/gtk-launch --version
