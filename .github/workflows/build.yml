@@ -9,5 +9,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: cachix/install-nix-action@v17
-      - run: nix-build -A butane https://github.com/NixOS/nixpkgs/archive/2638c1f4c16157ba8f1a22ff74945e070b210cea.tar.gz
-      - run: ./result/bin/butane -V
+      - run: nix-build -A goreleaser https://github.com/NixOS/nixpkgs/archive/e55c5780c578349149da57c8d392749f5d5d8181.tar.gz
+      - run: ./result/bin/goreleaser --version
