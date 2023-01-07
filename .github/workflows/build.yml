@@ -6,8 +6,8 @@ on:
 
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: cachix/install-nix-action@v17
-      - run: nix-build -A gtk3 https://github.com/NixOS/nixpkgs/archive/89d3fe878c6a04bd2377900a7da4c3044983e368.tar.gz
-      - run: ./result/bin/gtk-launch --version
+      - run: nix-build -A butane https://github.com/NixOS/nixpkgs/archive/2638c1f4c16157ba8f1a22ff74945e070b210cea.tar.gz
+      - run: ./result/bin/butane -V
