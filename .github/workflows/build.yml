@@ -6,8 +6,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - uses: cachix/install-nix-action@v17
-      - run: nix-build -A goreleaser https://github.com/NixOS/nixpkgs/archive/e55c5780c578349149da57c8d392749f5d5d8181.tar.gz
-      - run: ./result/bin/goreleaser --version
+      - run: nix-build -A cargo-public-api https://github.com/NixOS/nixpkgs/archive/f8e8a85cbafb0d5e1f5ffb51d43398d693bd3e3b.tar.gz
