@@ -16,9 +16,11 @@ jobs:
       - uses: cachix/install-nix-action@v17
       - run: nix-build -A ${PACKAGE_ATTR} https://github.com/NixOS/nixpkgs/archive/pull/${PR_NUMBER}/head.tar.gz
       - continue-on-error: true
-        run: nix-shell -p tree --command tree ./result
+        run: nix-shell -p tree --command tree ./result -I "nixpkgs=https://github.com/NixOS/nixpkgs/archive/nixos-unstable.tar.gz"
       - continue-on-error: true
         run: ./result/bin/${PACKAGE_ATTR} --help
+      - continue-on-error: true
+        run: ./result/bin/${PACKAGE_ATTR} -help
       - continue-on-error: true
         run: ./result/bin/${PACKAGE_ATTR} -h
       - continue-on-error: true
