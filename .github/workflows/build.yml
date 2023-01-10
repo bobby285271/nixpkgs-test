@@ -3,10 +3,19 @@ on:
     branches:
       - main
   workflow_dispatch:
+  
+  
+env:
+  PR_NUMBER: 209981
+  PACKAGE_ATTR: fastly
 
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: cachix/install-nix-action@v17
-      - run: nix-build -A cargo-public-api https://github.com/NixOS/nixpkgs/archive/f8e8a85cbafb0d5e1f5ffb51d43398d693bd3e3b.tar.gz
+      - run: nix-build -A ${PACKAGE_ATTR} https://github.com/NixOS/nixpkgs/archive/pulls/${PR_NUMBER}/head.tar.gz
+      - run: ./result/bin/${PACKAGE_ATTR} --help || true
+      - run: ./result/bin/${PACKAGE_ATTR} -h || true
+      - run: ./result/bin/${PACKAGE_ATTR} --version || true
+      - run: ./result/bin/${PACKAGE_ATTR} version || true
