@@ -6,8 +6,8 @@ on:
   
   
 env:
-  PACKAGE_ATTR: fastddsgen
-  PR_NUMBER: 210002
+  PACKAGE_ATTR: fastly
+  PR_NUMBER: 209981
 
 jobs:
   build:
