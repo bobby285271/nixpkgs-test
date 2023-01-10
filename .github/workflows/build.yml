@@ -15,15 +15,16 @@ jobs:
     steps:
       - uses: cachix/install-nix-action@v17
       - run: nix-build -A ${PACKAGE_ATTR} https://github.com/NixOS/nixpkgs/archive/pull/${PR_NUMBER}/head.tar.gz
+      - run: cd ./result
       - continue-on-error: true
-        run: nix-shell -p tree --command tree ./result -I "nixpkgs=https://github.com/NixOS/nixpkgs/archive/nixos-unstable.tar.gz"
+        run: nix-shell -p tree --command tree -I "nixpkgs=https://github.com/NixOS/nixpkgs/archive/nixos-unstable.tar.gz"
       - continue-on-error: true
-        run: ./result/bin/${PACKAGE_ATTR} --help
+        run: ./bin/${PACKAGE_ATTR} --help
       - continue-on-error: true
-        run: ./result/bin/${PACKAGE_ATTR} -h
+        run: ./bin/${PACKAGE_ATTR} -h
       - continue-on-error: true
-        run: ./result/bin/${PACKAGE_ATTR} --version
+        run: ./bin/${PACKAGE_ATTR} --version
       - continue-on-error: true
-        run: ./result/bin/${PACKAGE_ATTR} version
+        run: ./bin/${PACKAGE_ATTR} version
       - continue-on-error: true
-        run: ./result/bin/${PACKAGE_ATTR} -help
+        run: ./bin/${PACKAGE_ATTR} -help
