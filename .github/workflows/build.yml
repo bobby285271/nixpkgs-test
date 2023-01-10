@@ -15,6 +15,7 @@ jobs:
     steps:
       - uses: cachix/install-nix-action@v17
       - run: nix-build -A ${PACKAGE_ATTR} https://github.com/NixOS/nixpkgs/archive/pull/${PR_NUMBER}/head.tar.gz
+      - run: nix-shell -p tree --command tree ./result || true
       - run: ./result/bin/${PACKAGE_ATTR} --help || true
       - run: ./result/bin/${PACKAGE_ATTR} -h || true
       - run: ./result/bin/${PACKAGE_ATTR} --version || true
