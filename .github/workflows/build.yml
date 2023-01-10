@@ -6,9 +6,9 @@ on:
   
   
 env:
-  PACKAGE_ATTR: supabase-cli
-  MAIN_PROGRAM: supabase
-  PR_NUMBER: 209800
+  PACKAGE_ATTR: k40-whisperer
+  MAIN_PROGRAM: k40-whisperer
+  PR_NUMBER: 209275
 
 jobs:
   build:
