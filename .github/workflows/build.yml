@@ -20,10 +20,10 @@ jobs:
       - continue-on-error: true
         run: ./result/bin/${PACKAGE_ATTR} --help
       - continue-on-error: true
-        run: ./result/bin/${PACKAGE_ATTR} -help
-      - continue-on-error: true
         run: ./result/bin/${PACKAGE_ATTR} -h
       - continue-on-error: true
         run: ./result/bin/${PACKAGE_ATTR} --version
       - continue-on-error: true
         run: ./result/bin/${PACKAGE_ATTR} version
+      - continue-on-error: true
+        run: ./result/bin/${PACKAGE_ATTR} -help
