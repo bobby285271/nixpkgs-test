@@ -6,9 +6,9 @@ on:
   
   
 env:
-  PACKAGE_ATTR: fastddsgen
-  MAIN_PROGRAM: fastddsgen
-  PR_NUMBER: 210002
+  PACKAGE_ATTR: gore
+  MAIN_PROGRAM: gore
+  PR_NUMBER: 209729
 
 jobs:
   build:
