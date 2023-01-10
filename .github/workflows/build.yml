@@ -6,8 +6,8 @@ on:
   
   
 env:
-  PACKAGE_ATTR: okteto
-  PR_NUMBER: 209955
+  PACKAGE_ATTR: fastly
+  PR_NUMBER: 209981
 
 jobs:
   build:
