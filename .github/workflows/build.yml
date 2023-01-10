@@ -6,8 +6,9 @@ on:
   
   
 env:
-  PACKAGE_ATTR: awscli2
-  PR_NUMBER: 209647
+  PACKAGE_ATTR: supabase-cli
+  MAIN_PROGRAM: supabase
+  PR_NUMBER: 209800
 
 jobs:
   build:
@@ -18,12 +19,12 @@ jobs:
       - continue-on-error: true
         run: cd ./result && nix-shell -p tree --command tree -I "nixpkgs=https://github.com/NixOS/nixpkgs/archive/nixos-unstable.tar.gz"
       - continue-on-error: true
-        run: ./result/bin/${PACKAGE_ATTR} --help
+        run: ./result/bin/${MAIN_PROGRAM} --help
       - continue-on-error: true
-        run: ./result/bin/${PACKAGE_ATTR} -h
+        run: ./result/bin/${MAIN_PROGRAM} -h
       - continue-on-error: true
-        run: ./result/bin/${PACKAGE_ATTR} --version
+        run: ./result/bin/${MAIN_PROGRAM} --version
       - continue-on-error: true
-        run: ./result/bin/${PACKAGE_ATTR} version
+        run: ./result/bin/${MAIN_PROGRAM} version
       - continue-on-error: true
-        run: ./result/bin/${PACKAGE_ATTR} -help
+        run: ./result/bin/${MAIN_PROGRAM} -help
