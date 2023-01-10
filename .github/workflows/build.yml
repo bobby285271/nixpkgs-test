@@ -6,9 +6,9 @@ on:
   
   
 env:
-  PACKAGE_ATTR: k40-whisperer
-  MAIN_PROGRAM: k40-whisperer
-  PR_NUMBER: 209275
+  PACKAGE_ATTR: fastddsgen
+  MAIN_PROGRAM: fastddsgen
+  PR_NUMBER: 210002
 
 jobs:
   build:
