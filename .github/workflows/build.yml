@@ -6,8 +6,8 @@ on:
   
   
 env:
-  PACKAGE_ATTR: okteto
-  PR_NUMBER: 209955
+  PACKAGE_ATTR: awscli2
+  PR_NUMBER: 209647
 
 jobs:
   build:
