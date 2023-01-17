@@ -12,7 +12,7 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - uses: cachix/install-nix-action@v17
       - run: nix-build -A ${PACKAGE_ATTR} https://github.com/NixOS/nixpkgs/archive/pull/${PR_NUMBER}/head.tar.gz
