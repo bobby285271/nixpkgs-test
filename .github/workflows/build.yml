@@ -6,9 +6,9 @@ on:
   
   
 env:
-  PACKAGE_ATTR: gore
+  PACKAGE_ATTR: php.extensions.enchant
   MAIN_PROGRAM: gore
-  PR_NUMBER: 209729
+  PR_NUMBER: 211192
 
 jobs:
   build:
