@@ -15,7 +15,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: cachix/install-nix-action@v17
-      - run: nix-build -A php80Extensions.curl -A php81Extensions.curl -A php82Extensions.curl -A php80Extensions.enchant -A php81Extensions.enchant -A php82Extensions.enchant -A php80Extensions.iconv -A php81Extensions.iconv -A php82Extensions.iconv -A php80Extensions.soap -A php81Extensions.soap -A php82Extensions.soap -A php80Extensions.tidy -A php81Extensions.tidy -A php82Extensions.tidy https://github.com/NixOS/nixpkgs/archive/03a69566ed8db65105772c006f745bbc122b436b.tar.gz
+      - run: nix-build -A php80Extensions.enchant -A php81Extensions.enchant -A php82Extensions.enchant -A php80Extensions.iconv -A php81Extensions.iconv -A php82Extensions.iconv -A php80Extensions.soap -A php81Extensions.soap -A php82Extensions.soap -A php80Extensions.tidy -A php81Extensions.tidy -A php82Extensions.tidy https://github.com/NixOS/nixpkgs/archive/9827aba4512c66a0ed4ff1d473c98a4eb32022b9.tar.gz
       - continue-on-error: true
         run: cd ./result && nix-shell -p tree --command tree -I "nixpkgs=https://github.com/NixOS/nixpkgs/archive/nixos-unstable.tar.gz"
       - continue-on-error: true
