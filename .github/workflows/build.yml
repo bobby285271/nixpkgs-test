@@ -6,16 +6,16 @@ on:
   
   
 env:
-  PACKAGE_ATTR: php.extensions.enchant
-  MAIN_PROGRAM: gore
-  PR_NUMBER: 211192
+  PACKAGE_ATTR: nixosTests.gnome-xorg
+  MAIN_PROGRAM: noop
+  PR_NUMBER: 209877
 
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: cachix/install-nix-action@v17
-      - run: nix-build -A php80Extensions.enchant -A php81Extensions.enchant -A php82Extensions.enchant -A php80Extensions.iconv -A php81Extensions.iconv -A php82Extensions.iconv -A php80Extensions.soap -A php81Extensions.soap -A php82Extensions.soap -A php80Extensions.tidy -A php81Extensions.tidy -A php82Extensions.tidy https://github.com/NixOS/nixpkgs/archive/9827aba4512c66a0ed4ff1d473c98a4eb32022b9.tar.gz
+      - run: nix-build -A ${PACKAGE_ATTR} https://github.com/NixOS/nixpkgs/archive/pull/${PR_NUMBER}/head.tar.gz
       - continue-on-error: true
         run: cd ./result && nix-shell -p tree --command tree -I "nixpkgs=https://github.com/NixOS/nixpkgs/archive/nixos-unstable.tar.gz"
       - continue-on-error: true
