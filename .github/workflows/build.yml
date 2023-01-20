@@ -6,9 +6,9 @@ on:
   
   
 env:
-  PACKAGE_ATTR: nixosTests.gnome-xorg
-  MAIN_PROGRAM: noop
-  PR_NUMBER: 209877
+  PACKAGE_ATTR: stern
+  MAIN_PROGRAM: stern
+  PR_NUMBER: 193244
 
 jobs:
   build:
