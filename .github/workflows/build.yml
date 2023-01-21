@@ -6,9 +6,9 @@ on:
   
   
 env:
-  PACKAGE_ATTR: flintlock
-  MAIN_PROGRAM: flintlockd
-  PR_NUMBER: 210591
+  PACKAGE_ATTR: xplr
+  MAIN_PROGRAM: xplr
+  PR_NUMBER: 211035
 
 jobs:
   build:
