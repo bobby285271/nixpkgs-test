@@ -6,9 +6,9 @@ on:
   
   
 env:
-  PACKAGE_ATTR: stern
-  MAIN_PROGRAM: stern
-  PR_NUMBER: 193244
+  PACKAGE_ATTR: mangal
+  MAIN_PROGRAM: mangal
+  PR_NUMBER: 211076
 
 jobs:
   build:
