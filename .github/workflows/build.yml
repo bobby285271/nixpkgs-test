@@ -6,9 +6,9 @@ on:
   
   
 env:
-  PACKAGE_ATTR: mangal
-  MAIN_PROGRAM: mangal
-  PR_NUMBER: 211076
+  PACKAGE_ATTR: flintlock
+  MAIN_PROGRAM: flintlockd
+  PR_NUMBER: 210591
 
 jobs:
   build:
