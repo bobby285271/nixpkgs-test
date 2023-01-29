@@ -6,16 +6,16 @@ on:
   
   
 env:
-  PACKAGE_ATTR: xplr
-  MAIN_PROGRAM: xplr
-  PR_NUMBER: 211035
+  PACKAGE_ATTR: libheif
+  MAIN_PROGRAM: libheif
+  PR_NUMBER: master
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - uses: cachix/install-nix-action@v17
-      - run: nix-build -A ${PACKAGE_ATTR} https://github.com/NixOS/nixpkgs/archive/pull/${PR_NUMBER}/head.tar.gz
+      - run: nix-build -A ${PACKAGE_ATTR} https://github.com/NixOS/nixpkgs/archive/${PR_NUMBER}.tar.gz
       - continue-on-error: true
         run: cd ./result && nix-shell -p tree --command tree -I "nixpkgs=https://github.com/NixOS/nixpkgs/archive/nixos-unstable.tar.gz"
       - continue-on-error: true
