@@ -6,9 +6,9 @@ on:
   
   
 env:
-  PACKAGE_ATTR: libheif
-  MAIN_PROGRAM: libheif
-  PR_NUMBER: master
+  PACKAGE_ATTR: nixosTests.gnome
+  MAIN_PROGRAM: foobar
+  PR_NUMBER: pull/214067/head
 
 jobs:
   build:
