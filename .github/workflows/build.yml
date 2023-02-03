@@ -6,9 +6,9 @@ on:
   
   
 env:
-  PACKAGE_ATTR: nixosTests.gnome
-  MAIN_PROGRAM: foobar
-  PR_NUMBER: pull/214067/head
+  PACKAGE_ATTR: gnome.seahorse
+  MAIN_PROGRAM: seahorse
+  PR_NUMBER: staging-next
 
 jobs:
   build:
