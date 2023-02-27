@@ -6,9 +6,9 @@ on:
   
   
 env:
-  PACKAGE_ATTR: gnome.seahorse
-  MAIN_PROGRAM: seahorse
-  PR_NUMBER: staging-next
+  PACKAGE_ATTR: pkgsMusl.glib
+  MAIN_PROGRAM: foo
+  PR_NUMBER: ab8a0ada6c6f59a6391065ed650155a910d7a1db
 
 jobs:
   build:
@@ -16,15 +16,4 @@ jobs:
     steps:
       - uses: cachix/install-nix-action@v17
       - run: nix-build -A ${PACKAGE_ATTR} https://github.com/NixOS/nixpkgs/archive/${PR_NUMBER}.tar.gz
-      - continue-on-error: true
-        run: cd ./result && nix-shell -p tree --command tree -I "nixpkgs=https://github.com/NixOS/nixpkgs/archive/nixos-unstable.tar.gz"
-      - continue-on-error: true
-        run: ./result/bin/${MAIN_PROGRAM} --help
-      - continue-on-error: true
-        run: ./result/bin/${MAIN_PROGRAM} -h
-      - continue-on-error: true
-        run: ./result/bin/${MAIN_PROGRAM} --version
-      - continue-on-error: true
-        run: ./result/bin/${MAIN_PROGRAM} version
-      - continue-on-error: true
-        run: ./result/bin/${MAIN_PROGRAM} -help
+      - run: cd ./result-bin/bin && ls
