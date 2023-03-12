@@ -8,7 +8,7 @@ on:
 env:
   PACKAGE_ATTR: pkgsMusl.glib
   MAIN_PROGRAM: foo
-  PR_NUMBER: ab8a0ada6c6f59a6391065ed650155a910d7a1db
+  PR_NUMBER: c9410b118cd576a189cac7705acc4b412cb98d44
 
 jobs:
   build:
@@ -16,4 +16,4 @@ jobs:
     steps:
       - uses: cachix/install-nix-action@v17
       - run: nix-build -A ${PACKAGE_ATTR} https://github.com/NixOS/nixpkgs/archive/${PR_NUMBER}.tar.gz
-      - run: cd ./result-bin/bin && ls
+      - run: ls -lA
