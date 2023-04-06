@@ -6,13 +6,13 @@ on:
   
   
 env:
-  PACKAGE_ATTR: pkgsMusl.glib
-  MAIN_PROGRAM: foo
-  PR_NUMBER: c9410b118cd576a189cac7705acc4b412cb98d44
+  PACKAGE_ATTR: gimp
+  MAIN_PROGRAM: gimp
+  PR_NUMBER: d8dde72fbb99ce7912e655a5765b4f5a42256c94
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - uses: cachix/install-nix-action@v17
       - run: nix-build -A ${PACKAGE_ATTR} https://github.com/NixOS/nixpkgs/archive/${PR_NUMBER}.tar.gz
