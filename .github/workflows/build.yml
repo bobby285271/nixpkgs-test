@@ -6,9 +6,9 @@ on:
   
   
 env:
-  PACKAGE_ATTR: gimp
-  MAIN_PROGRAM: gimp
-  PR_NUMBER: d8dde72fbb99ce7912e655a5765b4f5a42256c94
+  PACKAGE_ATTR: gtk4
+  MAIN_PROGRAM: foobar
+  PR_NUMBER: a8fb0865bafce271d6bb9508cf7f5d0029777b89
 
 jobs:
   build:
