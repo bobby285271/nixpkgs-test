@@ -7,7 +7,7 @@ on:
   
 env:
   PACKAGE_ATTR: gtk4
-  COMMIT_SHA: a8fb0865bafce271d6bb9508cf7f5d0029777b89
+  COMMIT_SHA: d72290a8e6a1303f89995938e51da56b9188d8f4
 
 jobs:
   build:
