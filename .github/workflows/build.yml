@@ -7,13 +7,12 @@ on:
   
 env:
   PACKAGE_ATTR: gtk4
-  MAIN_PROGRAM: foobar
-  PR_NUMBER: a8fb0865bafce271d6bb9508cf7f5d0029777b89
+  COMMIT_SHA: a8fb0865bafce271d6bb9508cf7f5d0029777b89
 
 jobs:
   build:
     runs-on: macos-latest
     steps:
       - uses: cachix/install-nix-action@v17
-      - run: nix-build -A ${PACKAGE_ATTR} https://github.com/NixOS/nixpkgs/archive/${PR_NUMBER}.tar.gz
+      - run: nix-build -A ${PACKAGE_ATTR} https://github.com/NixOS/nixpkgs/archive/${COMMIT_SHA}.tar.gz
       - run: ls -lA
