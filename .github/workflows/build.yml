@@ -6,8 +6,8 @@ on:
   
   
 env:
-  PACKAGE_ATTR: gtk4
-  COMMIT_SHA: 1e2ccb0dd54ba6664e0b73f1189a67ef8151f963
+  PACKAGE_ATTR: nixosTests.gnome
+  COMMIT_SHA: f49c075edca4601dc4b35893abd740f6e210e9e0
 
 jobs:
   build:
