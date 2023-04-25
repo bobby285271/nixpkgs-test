@@ -6,12 +6,12 @@ on:
   
   
 env:
-  PACKAGE_ATTR: nixosTests.gnome
-  COMMIT_SHA: 73ef9868cfac99fcd8e4a840e43c29faaeafb23b
+  PACKAGE_ATTR: libadwaita
+  COMMIT_SHA: a0598d2737ee01c05fb8be09666fa755dc30f0f1
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - uses: cachix/install-nix-action@v17
       - run: nix-build -A ${PACKAGE_ATTR} https://github.com/NixOS/nixpkgs/archive/${COMMIT_SHA}.tar.gz
