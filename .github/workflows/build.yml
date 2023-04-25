@@ -7,7 +7,7 @@ on:
   
 env:
   PACKAGE_ATTR: nixosTests.gnome
-  COMMIT_SHA: f49c075edca4601dc4b35893abd740f6e210e9e0
+  COMMIT_SHA: 73ef9868cfac99fcd8e4a840e43c29faaeafb23b
 
 jobs:
   build:
