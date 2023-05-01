@@ -6,12 +6,12 @@ on:
   
   
 env:
-  PACKAGE_ATTR: gnome.gnome-music
-  COMMIT_SHA: 8a32fa2e4f625d9f114fe7d768223e184286f81a
+  PACKAGE_ATTR: tracker
+  COMMIT_SHA: dca0b89c662876e4b1b9958d4cc028bc2602309d
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - uses: cachix/install-nix-action@v17
       - run: nix-build -A ${PACKAGE_ATTR} https://github.com/NixOS/nixpkgs/archive/${COMMIT_SHA}.tar.gz
