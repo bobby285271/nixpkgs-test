@@ -6,8 +6,8 @@ on:
   
   
 env:
-  PACKAGE_ATTR: libadwaita
-  COMMIT_SHA: a0598d2737ee01c05fb8be09666fa755dc30f0f1
+  PACKAGE_ATTR: gnome.gnome-music
+  COMMIT_SHA: 8a32fa2e4f625d9f114fe7d768223e184286f81a
 
 jobs:
   build:
