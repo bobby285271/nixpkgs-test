@@ -7,7 +7,7 @@ on:
   
 env:
   PACKAGE_ATTR: tracker
-  COMMIT_SHA: c051748b332cd1aa50a99f4f490de898e7d6505e
+  COMMIT_SHA: 3fe874d773588e2fa6b678e8bb5bb8b127e75e68
 
 jobs:
   build:
