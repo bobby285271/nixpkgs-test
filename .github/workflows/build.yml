@@ -16,6 +16,6 @@ jobs:
       - uses: cachix/install-nix-action@v17
         with:
           extra_nix_config: |
-            sandbox = true
+            sandbox = false
       - run: nix-build -A ${PACKAGE_ATTR} https://github.com/NixOS/nixpkgs/archive/${COMMIT_SHA}.tar.gz
       - run: ls -lA
