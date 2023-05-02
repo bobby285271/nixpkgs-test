@@ -13,7 +13,9 @@ jobs:
   build:
     runs-on: macos-latest
     steps:
-      - run: date +%C
-#       - uses: cachix/install-nix-action@v17
-#       - run: nix-build -A ${PACKAGE_ATTR} https://github.com/NixOS/nixpkgs/archive/${COMMIT_SHA}.tar.gz
-#       - run: ls -lA
+      - uses: cachix/install-nix-action@v17
+        with:
+          extra_nix_config: |
+            sandbox = true
+      - run: nix-build -A ${PACKAGE_ATTR} https://github.com/NixOS/nixpkgs/archive/${COMMIT_SHA}.tar.gz
+      - run: ls -lA
