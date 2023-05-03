@@ -6,16 +6,16 @@ on:
   
   
 env:
-  PACKAGE_ATTR: tracker
-  COMMIT_SHA: c051748b332cd1aa50a99f4f490de898e7d6505e
+  PACKAGE_ATTR: gspell
+  COMMIT_SHA: 42b17034383fb383744f58bcd0bee433e5555a03
 
 jobs:
   build:
     runs-on: macos-latest
     steps:
       - uses: cachix/install-nix-action@v17
-        with:
-          extra_nix_config: |
-            sandbox = false
+#         with:
+#           extra_nix_config: |
+#             sandbox = false
       - run: nix-build -A ${PACKAGE_ATTR} https://github.com/NixOS/nixpkgs/archive/${COMMIT_SHA}.tar.gz
       - run: ls -lA
