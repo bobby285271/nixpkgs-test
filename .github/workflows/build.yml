@@ -7,7 +7,7 @@ on:
   
 env:
   PACKAGE_ATTR: gspell
-  COMMIT_SHA: 42b17034383fb383744f58bcd0bee433e5555a03
+  COMMIT_SHA: 936f511197e311c44a404f4421af47889ee6d582
 
 jobs:
   build:
