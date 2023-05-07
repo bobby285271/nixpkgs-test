@@ -7,7 +7,7 @@ on:
   
 env:
   PACKAGE_ATTR: gexiv2
-  COMMIT_SHA: 54c6b7e1a774eb75400ab5c00594209e9aed631f
+  COMMIT_SHA: 2b1d82d2531422e24c4add000ffe437c1a27384d
 
 jobs:
   build:
