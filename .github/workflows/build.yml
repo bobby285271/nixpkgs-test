@@ -6,9 +6,8 @@ on:
   
   
 env:
-  PACKAGE_ATTR: gexiv2
-  COMMIT_SHA: 2b1d82d2531422e24c4add000ffe437c1a27384d
-
+  PACKAGE_ATTR: adwaita-qt
+  COMMIT_SHA: 4ccb965fd0b406e3630a8550a2d344f295f0c5a0
 jobs:
   build:
     runs-on: macos-latest
