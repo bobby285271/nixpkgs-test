@@ -6,8 +6,8 @@ on:
   
   
 env:
-  PACKAGE_ATTR: adwaita-qt
-  COMMIT_SHA: 4ccb965fd0b406e3630a8550a2d344f295f0c5a0
+  PACKAGE_ATTR: cairo
+  COMMIT_SHA: 950615234d5254895515686efacd5e51a8402882
 jobs:
   build:
     runs-on: macos-latest
