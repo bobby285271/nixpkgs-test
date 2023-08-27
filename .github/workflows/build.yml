@@ -6,8 +6,8 @@ on:
   
   
 env:
-  PACKAGE_ATTR: cairo
-  COMMIT_SHA: 950615234d5254895515686efacd5e51a8402882
+  PACKAGE_ATTR: gtk3
+  COMMIT_SHA: 5777c0dfc43153e12acf5ad1dcd14ded31daacfa
 jobs:
   build:
     runs-on: macos-latest
