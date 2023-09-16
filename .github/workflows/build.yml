@@ -15,7 +15,7 @@ jobs:
       - uses: cachix/install-nix-action@v22
         with:
            extra_nix_config: |
-             sandbox = false
+             sandbox = true
       - uses: DeterminateSystems/magic-nix-cache-action@main
       - run: nix-build -A ${PACKAGE_ATTR} https://github.com/NixOS/nixpkgs/archive/${COMMIT_SHA}.tar.gz
       - run: ls -lA
