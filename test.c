@@ -1,6 +1,9 @@
 #include <sys/types.h>
 #include <sys/ipc.h>
 #include <sys/shm.h>
+
+#include <stdio.h>
+
 int main()
 {
     char *shmaddr;
@@ -9,10 +12,13 @@ int main()
     shmaddr = shmat (id, 0, 0);
     shmctl (id, IPC_RMID, 0);
     if ((char*) shmat (id, 0, 0) == (char*) -1) {
-  shmdt (shmaddr);
-  return 1;
+      shmdt (shmaddr);
+        printf("errrrrrrrrrrrrrrrrrrr");
+      return 1;
     }
     shmdt (shmaddr);
     shmdt (shmaddr);
+
+    printf("ohhhhhhhhhhhhh");
     return 0;
 }
