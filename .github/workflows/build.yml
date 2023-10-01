@@ -6,8 +6,8 @@ on:
   
   
 env:
-  PACKAGE_ATTR: gimp
-  COMMIT_SHA: 974de0756091b64ecb1c0aa3bc6cd01b8c0748b8
+  PACKAGE_ATTR: gtk4
+  COMMIT_SHA: ca7a5c8a39a5a6e0cea0fec71f137e5ddff1c75b
 jobs:
   build:
     runs-on: macos-latest
