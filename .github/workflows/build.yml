@@ -6,17 +6,16 @@ on:
   
   
 env:
-  PACKAGE_ATTR: cairo
-  COMMIT_SHA: 03842d4d7579a52140d64e5a8f1b961f147911ec
+  PACKAGE_ATTR: gimp
+  COMMIT_SHA: 974de0756091b64ecb1c0aa3bc6cd01b8c0748b8
 jobs:
   build:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v4
       - uses: cachix/install-nix-action@v22
         with:
            extra_nix_config: |
              sandbox = true
       - uses: DeterminateSystems/magic-nix-cache-action@main
-      - run: nix-build -A gcc https://github.com/NixOS/nixpkgs/archive/${COMMIT_SHA}.tar.gz
-      - run: ./result/bin/gcc test.c; ./a.out; echo $?
+      - run: nix-build -A ${PACKAGE_ATTR} https://github.com/NixOS/nixpkgs/archive/${COMMIT_SHA}.tar.gz
+      - run: ls -lA
