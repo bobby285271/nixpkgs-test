@@ -6,8 +6,8 @@ on:
   
   
 env:
-  PACKAGE_ATTR: gtk4
-  COMMIT_SHA: ca7a5c8a39a5a6e0cea0fec71f137e5ddff1c75b
+  PACKAGE_ATTR: appstream
+  COMMIT_SHA: 137fd209a3b07fc3efc73bb34130a967d44c7557
 jobs:
   build:
     runs-on: macos-latest
