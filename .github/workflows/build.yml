@@ -7,7 +7,7 @@ on:
   
 env:
   PACKAGE_ATTR: appstream
-  COMMIT_SHA: 137fd209a3b07fc3efc73bb34130a967d44c7557
+  COMMIT_SHA: 550b83ea553a4173df3faaf6ccdc89fba55c5eea
 jobs:
   build:
     runs-on: macos-latest
