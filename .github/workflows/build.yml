@@ -6,8 +6,8 @@ on:
   
   
 env:
-  PACKAGE_ATTR: libgweather
-  COMMIT_SHA: bfdc7e350888375867757e1cf8fcdf2deb318192
+  PACKAGE_ATTR: evolution-data-server
+  COMMIT_SHA: 5a756b0293210951be089fdeaaf6dd94f20686d0
 jobs:
   build:
     runs-on: macos-latest
