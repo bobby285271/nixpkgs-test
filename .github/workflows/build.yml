@@ -7,7 +7,7 @@ on:
   
 env:
   PACKAGE_ATTR: evolution-data-server
-  COMMIT_SHA: b6ed326af5580d087c98b42bbf13630e1f2561aa
+  COMMIT_SHA: f52c43fe4c3d2d64d34ecf3dcb10ce804d53efe7
 jobs:
   build:
     runs-on: macos-latest
