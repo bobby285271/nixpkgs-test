@@ -6,8 +6,8 @@ on:
   
   
 env:
-  PACKAGE_ATTR: appstream
-  COMMIT_SHA: e9b7d2751adaa97d687b08339ceb49873ac9abc6
+  PACKAGE_ATTR: libgweather
+  COMMIT_SHA: fa7927bfacdba602f8e22dac25729562c6c416ae
 jobs:
   build:
     runs-on: macos-latest
