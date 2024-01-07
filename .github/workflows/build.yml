@@ -7,7 +7,7 @@ on:
   
 env:
   PACKAGE_ATTR: libgweather
-  COMMIT_SHA: fa7927bfacdba602f8e22dac25729562c6c416ae
+  COMMIT_SHA: bfdc7e350888375867757e1cf8fcdf2deb318192
 jobs:
   build:
     runs-on: macos-latest
