@@ -7,7 +7,7 @@ on:
   
 env:
   PACKAGE_ATTR: folks
-  COMMIT_SHA: 9378ed21f81c795c789b8e67e0f5de2fcd0ce4b8
+  COMMIT_SHA: 2596d459d62ec54402033511a0da8580a6fe19a
 jobs:
   build:
     runs-on: macos-latest
