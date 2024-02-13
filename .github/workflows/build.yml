@@ -6,8 +6,8 @@ on:
   
   
 env:
-  PACKAGE_ATTR: folks
-  COMMIT_SHA: e9fa83cac8eabeeb57efa35379d9d9acab4a89e4
+  PACKAGE_ATTR: gnome.gnome-music
+  COMMIT_SHA: 9a492fda467eca96ec72ee62bb37ab491304f248
 jobs:
   build:
     runs-on: macos-latest
