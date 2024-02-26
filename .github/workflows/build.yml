@@ -7,7 +7,7 @@ on:
   
 env:
   PACKAGE_ATTR: freerdp_3
-  COMMIT_SHA:  6bd4f9cacce522a66ebf5c058f2c71209feb4465
+  COMMIT_SHA: 5b38551b6f88809c813113a55b9743d9ba419652
 jobs:
   build:
     runs-on: macos-latest
