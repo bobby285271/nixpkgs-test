@@ -6,7 +6,7 @@ on:
   
   
 env:
-  PACKAGE_ATTR: freerdp
+  PACKAGE_ATTR: freerdp_3
   COMMIT_SHA: c1604681a9a9e776f0f638da1d189bfe7caefa95
 jobs:
   build:
