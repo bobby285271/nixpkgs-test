@@ -6,8 +6,8 @@ on:
   
   
 env:
-  PACKAGE_ATTR: gnome.gnome-music
-  COMMIT_SHA: 9a492fda467eca96ec72ee62bb37ab491304f248
+  PACKAGE_ATTR: freerdp
+  COMMIT_SHA: c1604681a9a9e776f0f638da1d189bfe7caefa95
 jobs:
   build:
     runs-on: macos-latest
