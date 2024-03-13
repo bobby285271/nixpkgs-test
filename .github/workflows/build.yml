@@ -6,8 +6,8 @@ on:
   
   
 env:
-  PACKAGE_ATTR: gtk3
-  COMMIT_SHA: 86f8d3b691739559039acb97e0c4218a0125d1ea
+  PACKAGE_ATTR: nixosTests.mate
+  COMMIT_SHA: 709b57942e85c7471c026f433e4c32413dacf384
 jobs:
   build:
     runs-on: macos-latest
