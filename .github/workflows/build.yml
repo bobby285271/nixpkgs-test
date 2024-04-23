@@ -7,7 +7,7 @@ on:
   
 env:
   PACKAGE_ATTR: glib
-  COMMIT_SHA: 3d96608e696256e110666409a0ddca12c9d835c1
+  COMMIT_SHA: fe9649d1b255741933168ee8b310add4eb155f1e
 jobs:
   build:
     runs-on: macos-latest
