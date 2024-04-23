@@ -6,8 +6,8 @@ on:
   
   
 env:
-  PACKAGE_ATTR: nixosTests.mate
-  COMMIT_SHA: 709b57942e85c7471c026f433e4c32413dacf384
+  PACKAGE_ATTR: glib
+  COMMIT_SHA: 3d96608e696256e110666409a0ddca12c9d835c1
 jobs:
   build:
     runs-on: macos-latest
