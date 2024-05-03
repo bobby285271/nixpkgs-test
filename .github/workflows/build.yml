@@ -6,8 +6,8 @@ on:
   
   
 env:
-  PACKAGE_ATTR: glib
-  COMMIT_SHA: fe9649d1b255741933168ee8b310add4eb155f1e
+  PACKAGE_ATTR: vscode
+  COMMIT_SHA: c320522f1d238c1d261aa5bf2463a03f1e046a89
 jobs:
   build:
     runs-on: macos-latest
@@ -17,5 +17,5 @@ jobs:
            extra_nix_config: |
              sandbox = true
       - uses: DeterminateSystems/magic-nix-cache-action@main
-      - run: nix-build -A ${PACKAGE_ATTR} https://github.com/NixOS/nixpkgs/archive/${COMMIT_SHA}.tar.gz
+      - run: NIXPKGS_ALLOW_UNFREE=1 nix-build -A ${PACKAGE_ATTR} https://github.com/NixOS/nixpkgs/archive/${COMMIT_SHA}.tar.gz
       - run: ls -lA
