@@ -6,8 +6,8 @@ on:
   
   
 env:
-  PACKAGE_ATTR: tracker
-  COMMIT_SHA: faef3fcc7a9bbc34fc2e7291464c6eb6c5b06666
+  PACKAGE_ATTR: gdk-pixbuf
+  COMMIT_SHA: 7bd27dbf55c31df135034edf1f1e371d31d719e7
 jobs:
   build:
     runs-on: macos-latest
