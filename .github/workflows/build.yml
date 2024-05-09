@@ -6,8 +6,8 @@ on:
   
   
 env:
-  PACKAGE_ATTR: vte
-  COMMIT_SHA: 76de884476b4a2f13e69581af444a0824c7fb63d
+  PACKAGE_ATTR: tracker
+  COMMIT_SHA: e26b27a23a6ce7628963632316ead52f15dbfedc
 jobs:
   build:
     runs-on: macos-latest
