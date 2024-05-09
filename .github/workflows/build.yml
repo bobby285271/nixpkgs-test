@@ -7,7 +7,7 @@ on:
   
 env:
   PACKAGE_ATTR: tracker
-  COMMIT_SHA: e26b27a23a6ce7628963632316ead52f15dbfedc
+  COMMIT_SHA: faef3fcc7a9bbc34fc2e7291464c6eb6c5b06666
 jobs:
   build:
     runs-on: macos-latest
