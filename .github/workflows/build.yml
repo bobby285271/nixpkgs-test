@@ -6,8 +6,8 @@ on:
   
   
 env:
-  PACKAGE_ATTR: gdk-pixbuf
-  COMMIT_SHA: 7bd27dbf55c31df135034edf1f1e371d31d719e7
+  PACKAGE_ATTR: gnome.gnome-shell
+  COMMIT_SHA: 4f1510cd16e020758d968b0f0b302bea0f024f2c
 jobs:
   build:
     runs-on: macos-latest
