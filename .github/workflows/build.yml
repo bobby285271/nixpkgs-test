@@ -6,11 +6,11 @@ on:
   
   
 env:
-  PACKAGE_ATTR: gnome.gnome-shell
-  COMMIT_SHA: 4f1510cd16e020758d968b0f0b302bea0f024f2c
+  PACKAGE_ATTR: vscodium
+  COMMIT_SHA: aabd7c4da06281f6c94675730ddae67bdb252ec8
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - uses: cachix/install-nix-action@v22
         with:
