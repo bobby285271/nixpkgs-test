@@ -6,8 +6,8 @@ on:
   
   
 env:
-  PACKAGE_ATTR: vscodium
-  COMMIT_SHA: aabd7c4da06281f6c94675730ddae67bdb252ec8
+  PACKAGE_ATTR: mate.libmatekbd
+  COMMIT_SHA: db3b6149c90291f80f113b58dd0323472065aa75
 jobs:
   build:
     runs-on: macos-latest
