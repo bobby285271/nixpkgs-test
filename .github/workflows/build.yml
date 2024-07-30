@@ -7,7 +7,7 @@ on:
   
 env:
   PACKAGE_ATTR: mate.libmatekbd
-  COMMIT_SHA: db3b6149c90291f80f113b58dd0323472065aa75
+  COMMIT_SHA: 649a482d94546489cc0481431df33a12be53e82c
 jobs:
   build:
     runs-on: macos-latest
