@@ -6,8 +6,8 @@ on:
   
   
 env:
-  PACKAGE_ATTR: mate.libmatekbd
-  COMMIT_SHA: 649a482d94546489cc0481431df33a12be53e82c
+  PACKAGE_ATTR: glib
+  COMMIT_SHA: afb19757e46233d81f702f007cdbfa68c05e8181
 jobs:
   build:
     runs-on: macos-latest
