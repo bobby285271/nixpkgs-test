@@ -6,8 +6,8 @@ on:
   
   
 env:
-  PACKAGE_ATTR: glib
-  COMMIT_SHA: afb19757e46233d81f702f007cdbfa68c05e8181
+  PACKAGE_ATTR: vscodium
+  COMMIT_SHA: 8077d3725cda6159616d2d8da3650450595148d9
 jobs:
   build:
     runs-on: macos-latest
