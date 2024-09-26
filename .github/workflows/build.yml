@@ -6,8 +6,8 @@ on:
   
   
 env:
-  PACKAGE_ATTR: gspell
-  COMMIT_SHA: 413799bdd1d2ac62b707b0c3f726b8d60c8dc592
+  PACKAGE_ATTR: inkscape
+  COMMIT_SHA: d1171cb3880e2a024e45cbd1dd286858d1febb7d
 jobs:
   build:
     runs-on: macos-latest
