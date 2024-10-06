@@ -6,8 +6,8 @@ on:
   
   
 env:
-  PACKAGE_ATTR: vscode
-  COMMIT_SHA: master
+  PACKAGE_ATTR: vscodium
+  COMMIT_SHA: 75ded6521c34d4b039373067e9ea0b9c38261efe
 jobs:
   build:
     runs-on: macos-latest
