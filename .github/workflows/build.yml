@@ -6,8 +6,8 @@ on:
   
   
 env:
-  PACKAGE_ATTR: inkscape
-  COMMIT_SHA: d1171cb3880e2a024e45cbd1dd286858d1febb7d
+  PACKAGE_ATTR: vscode
+  COMMIT_SHA: master
 jobs:
   build:
     runs-on: macos-latest
