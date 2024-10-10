@@ -6,11 +6,11 @@ on:
   
   
 env:
-  PACKAGE_ATTR: gupnp_1_6
-  COMMIT_SHA: 328acd8860fe63e34643c352cb9e6da7ee515168
+  PACKAGE_ATTR: vscodium
+  COMMIT_SHA: 45bd53e37b4984c7b99702f305db4f02c47270e1
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - uses: cachix/install-nix-action@v22
         with:
