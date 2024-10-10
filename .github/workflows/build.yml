@@ -6,7 +6,7 @@ on:
   
   
 env:
-  PACKAGE_ATTR: vscode
+  PACKAGE_ATTR: vscodium
   COMMIT_SHA: 9f688ac24ba5a2308950aa7b64e84cc6ace3bcf3
 jobs:
   build:
