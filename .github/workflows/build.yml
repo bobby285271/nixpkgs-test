@@ -7,7 +7,7 @@ on:
   
 env:
   PACKAGE_ATTR: vscodium
-  COMMIT_SHA: 9f688ac24ba5a2308950aa7b64e84cc6ace3bcf3
+  COMMIT_SHA: 974456db38e639741f2b07f90c56cc417d9f6507
 jobs:
   build:
     runs-on: ubuntu-latest
