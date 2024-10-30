@@ -6,8 +6,8 @@ on:
   
   
 env:
-  PACKAGE_ATTR: tinysparql
-  COMMIT_SHA: d29d7043a7c3dae0371a35676ba5b5192ef32b0e
+  PACKAGE_ATTR: vscode
+  COMMIT_SHA: debb301a2118b88c5ddb2355661886daa5c75038
 jobs:
   build:
     runs-on: macos-latest
