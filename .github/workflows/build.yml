@@ -6,8 +6,8 @@ on:
   
   
 env:
-  PACKAGE_ATTR: vscode
-  COMMIT_SHA: debb301a2118b88c5ddb2355661886daa5c75038
+  PACKAGE_ATTR: gjs
+  COMMIT_SHA: 714b0306e33aa057e3f8a617644a05342053b03c
 jobs:
   build:
     runs-on: macos-latest
