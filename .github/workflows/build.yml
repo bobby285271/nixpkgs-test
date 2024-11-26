@@ -6,8 +6,8 @@ on:
   
   
 env:
-  PACKAGE_ATTR: libxmlb
-  COMMIT_SHA: 7e3f7b05f4764d2d99ed134ca360ca339ead3926
+  PACKAGE_ATTR: vscodium
+  COMMIT_SHA: aac60d6a8742e87fa82c28946b8201b99015d935
 jobs:
   build:
     runs-on: macos-latest
