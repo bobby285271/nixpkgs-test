@@ -6,8 +6,8 @@ on:
   
   
 env:
-  PACKAGE_ATTR: nix
-  COMMIT_SHA: a891024e230f3ff40ee0e9873602636de3c32e7e
+  PACKAGE_ATTR: vscodium
+  COMMIT_SHA: 1b5533a6371eb92db3496c130b668a6670ec7b96
 jobs:
   build:
     runs-on: ubuntu-latest
