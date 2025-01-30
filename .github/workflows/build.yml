@@ -7,7 +7,7 @@ on:
   
 env:
   PACKAGE_ATTR: vscodium
-  COMMIT_SHA: 1b5533a6371eb92db3496c130b668a6670ec7b96
+  COMMIT_SHA: e227f2cc219aeaa65c5df6f02f87f23183544746
 jobs:
   build:
     runs-on: macos-latest
@@ -17,5 +17,6 @@ jobs:
            extra_nix_config: |
              sandbox = true
       - uses: DeterminateSystems/magic-nix-cache-action@main
-      - run: NIXPKGS_ALLOW_UNFREE=1 nix-build -A ${PACKAGE_ATTR} https://github.com/NixOS/nixpkgs/archive/${COMMIT_SHA}.tar.gz
-      - run: ls -lA
+      - run: NIXPKGS_ALLOW_UNFREE=1 nix-build -I nixpkgs=. -E 'with import <nixpkgs> { config = { allowUnfree = true; }; }; vscode.override { isInsiders = true; }' https://github.com/NixOS/nixpkgs/archive/${COMMIT_SHA}.tar.gz
+      # - run: NIXPKGS_ALLOW_UNFREE=1 nix-build -A ${PACKAGE_ATTR} https://github.com/NixOS/nixpkgs/archive/${COMMIT_SHA}.tar.gz
+      - run: find result
