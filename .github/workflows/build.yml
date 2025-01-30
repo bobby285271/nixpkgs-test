@@ -17,6 +17,7 @@ jobs:
            extra_nix_config: |
              sandbox = true
       - uses: DeterminateSystems/magic-nix-cache-action@main
-      - run: NIXPKGS_ALLOW_UNFREE=1 nix-build -E 'with import <nixpkgs> { config = { allowUnfree = true; }; }; vscode.override { isInsiders = true; }' https://github.com/NixOS/nixpkgs/archive/${COMMIT_SHA}.tar.gz
+      - run: git clone 
+      - run: NIXPKGS_ALLOW_UNFREE=1 nix-build -I nixpkgs=https://github.com/NixOS/nixpkgs/archive/${COMMIT_SHA}.tar.gz -E 'with import <nixpkgs> { config = { allowUnfree = true; }; }; vscode.override { isInsiders = true; }' 
       # - run: NIXPKGS_ALLOW_UNFREE=1 nix-build -A ${PACKAGE_ATTR} https://github.com/NixOS/nixpkgs/archive/${COMMIT_SHA}.tar.gz
       - run: find result
