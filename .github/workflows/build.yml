@@ -19,4 +19,5 @@ jobs:
       # - run: NIXPKGS_ALLOW_UNFREE=1 nix-build -I nixpkgs=https://github.com/NixOS/nixpkgs/archive/${COMMIT_SHA}.tar.gz -E 'with import <nixpkgs> { config = { allowUnfree = true; }; }; vscode.override { isInsiders = true; }' 
       - run: NIXPKGS_ALLOW_UNFREE=1 nix-build -A ${PACKAGE_ATTR} https://github.com/NixOS/nixpkgs/archive/${COMMIT_SHA}.tar.gz
       # - run: find /nix/store/0basx4asa7cpfcdsnn4nccci32ndcrmy-vscode-insiders-1.97.0-insider
-      - run: find ./result
+      - run: ls -lAh
+      - run: cd result && find
