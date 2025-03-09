@@ -20,4 +20,4 @@ jobs:
       - run: NIXPKGS_ALLOW_UNFREE=1 nix-build -A ${PACKAGE_ATTR} https://github.com/NixOS/nixpkgs/archive/${COMMIT_SHA}.tar.gz
       # - run: find /nix/store/0basx4asa7cpfcdsnn4nccci32ndcrmy-vscode-insiders-1.97.0-insider
       - run: ls -lAh
-      - run: cd result && find
+      - run: cd result && find .
