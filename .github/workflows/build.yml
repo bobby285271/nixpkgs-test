@@ -7,7 +7,7 @@ on:
   
 env:
   PACKAGE_ATTR: vscodium
-  COMMIT_SHA: 635807853a6c361db6440917df9a3a349f8fedc4
+  COMMIT_SHA: 9e129b4eb196197189966192ed1adbf84d5eba24
 jobs:
   build:
     runs-on: macos-latest
