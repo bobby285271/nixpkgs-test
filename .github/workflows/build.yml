@@ -6,8 +6,8 @@ on:
   
   
 env:
-  PACKAGE_ATTR: libadwaita
-  COMMIT_SHA: 3bc4d7773c37eb8c3cf29e6ec172b69f8d414d25
+  PACKAGE_ATTR: gssdp_1_6
+  COMMIT_SHA: c9858489fca0f4c4c6b71f4a4853f53748f2c388
 jobs:
   build:
     runs-on: macos-latest
