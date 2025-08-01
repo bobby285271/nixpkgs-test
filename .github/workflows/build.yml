@@ -6,11 +6,11 @@ on:
   
   
 env:
-  PACKAGE_ATTR: gssdp_1_6
-  COMMIT_SHA: c9858489fca0f4c4c6b71f4a4853f53748f2c388
+  PACKAGE_ATTR: mint-y-icons
+  COMMIT_SHA: 625655c9891e6fb702f09d3f260a7bc5affce530
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: cachix/install-nix-action@v22
         with:
