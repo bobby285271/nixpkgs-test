@@ -6,11 +6,11 @@ on:
   
   
 env:
-  PACKAGE_ATTR: mint-y-icons
-  COMMIT_SHA: 625655c9891e6fb702f09d3f260a7bc5affce530
+  PACKAGE_ATTR: vscodium
+  COMMIT_SHA: 54a378b15f96f93b1046be8d663c002e4c6e16c1
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - uses: cachix/install-nix-action@v22
         with:
