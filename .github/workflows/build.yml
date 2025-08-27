@@ -16,7 +16,7 @@ jobs:
         with:
            extra_nix_config: |
              sandbox = true
-      - run: NIXPKGS_ALLOW_UNFREE=1 nix-build -I nixpkgs=https://github.com/NixOS/nixpkgs/archive/${COMMIT_SHA}.tar.gz -E 'with import <nixpkgs> { config = { allowUnfree = true; }; }; vscode.override { isInsiders = true; }' 
+      # - run: NIXPKGS_ALLOW_UNFREE=1 nix-build -I nixpkgs=https://github.com/NixOS/nixpkgs/archive/${COMMIT_SHA}.tar.gz -E 'with import <nixpkgs> { config = { allowUnfree = true; }; }; vscode.override { isInsiders = true; }' 
       # - run: NIXPKGS_ALLOW_UNFREE=1 nix-build -A ${PACKAGE_ATTR} https://github.com/NixOS/nixpkgs/archive/${COMMIT_SHA}.tar.gz
       - run: NIXPKGS_ALLOW_UNFREE=1 nix-build -A spidermonkey_115 -A spidermonkey_128 -A spidermonkey_140 https://github.com/NixOS/nixpkgs/archive/${COMMIT_SHA}.tar.gz --keep-going
       # - run: find /nix/store/0basx4asa7cpfcdsnn4nccci32ndcrmy-vscode-insiders-1.97.0-insider
