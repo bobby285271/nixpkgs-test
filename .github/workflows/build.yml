@@ -7,7 +7,7 @@ on:
   
 env:
   # PACKAGE_ATTR: spidermonkey_128
-  COMMIT_SHA: 108143c7abca5de3d68adcd8403b86ebc0edfade
+  COMMIT_SHA: 62d6e6478649f563192f9ad56832e4d2f0ddb74b
 jobs:
   build:
     runs-on: macos-latest
