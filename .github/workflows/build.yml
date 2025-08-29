@@ -7,7 +7,7 @@ on:
   
 env:
   # PACKAGE_ATTR: spidermonkey_128
-  COMMIT_SHA: 62d6e6478649f563192f9ad56832e4d2f0ddb74b
+  COMMIT_SHA: 108143c7abca5de3d68adcd8403b86ebc0edfade
 jobs:
   build:
     runs-on: macos-latest
@@ -18,7 +18,7 @@ jobs:
              sandbox = true
       # - run: NIXPKGS_ALLOW_UNFREE=1 nix-build -I nixpkgs=https://github.com/NixOS/nixpkgs/archive/${COMMIT_SHA}.tar.gz -E 'with import <nixpkgs> { config = { allowUnfree = true; }; }; vscode.override { isInsiders = true; }' 
       # - run: NIXPKGS_ALLOW_UNFREE=1 nix-build -A ${PACKAGE_ATTR} https://github.com/NixOS/nixpkgs/archive/${COMMIT_SHA}.tar.gz
-      - run: NIXPKGS_ALLOW_UNFREE=1 nix-build -A spidermonkey_128 -A spidermonkey_140 https://github.com/NixOS/nixpkgs/archive/${COMMIT_SHA}.tar.gz --keep-going
+      - run: NIXPKGS_ALLOW_UNFREE=1 nix-build -A spidermonkey_115 https://github.com/NixOS/nixpkgs/archive/${COMMIT_SHA}.tar.gz --keep-going
       # - run: find /nix/store/0basx4asa7cpfcdsnn4nccci32ndcrmy-vscode-insiders-1.97.0-insider
       - run: ls -lAh
       - run: cd result && find .
