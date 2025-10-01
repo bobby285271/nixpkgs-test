@@ -7,7 +7,7 @@ on:
   
 env:
   PACKAGE_ATTR: libnotify
-  COMMIT_SHA: fae1f8c8a11530e89c8ac28332e7cefa397f680c
+  COMMIT_SHA: ccbbeaa032818277e03ec9f28aeaef000d8b6cda
 jobs:
   build:
     runs-on: macos-latest
