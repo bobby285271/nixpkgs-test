@@ -6,11 +6,11 @@ on:
   
   
 env:
-  PACKAGE_ATTR: libnotify
-  COMMIT_SHA: ccbbeaa032818277e03ec9f28aeaef000d8b6cda
+  PACKAGE_ATTR: nixosTests.xfce
+  COMMIT_SHA: 9182aaa0481b32fb19944d46ab61fe48d238a026
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: cachix/install-nix-action@v31
         with:
