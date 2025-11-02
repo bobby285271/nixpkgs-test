@@ -10,7 +10,7 @@ env:
   COMMIT_SHA: 9182aaa0481b32fb19944d46ab61fe48d238a026
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04-arm
     steps:
       - uses: cachix/install-nix-action@v31
         with:
