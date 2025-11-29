@@ -6,11 +6,11 @@ on:
   
   
 env:
-  PACKAGE_ATTR: vscodium
-  COMMIT_SHA: d15b3a1d7976ecca928047b326e98528a25a7914
+  PACKAGE_ATTR: gnome-terminal
+  COMMIT_SHA: 3ab214532570a91a2a744fdddbb9fa441e0cbb7d
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: ubuntu-24.04-arm
     steps:
       - uses: cachix/install-nix-action@v31
         with:
