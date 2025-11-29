@@ -6,8 +6,8 @@ on:
   
   
 env:
-  PACKAGE_ATTR: gnome-terminal
-  COMMIT_SHA: 3ab214532570a91a2a744fdddbb9fa441e0cbb7d
+  PACKAGE_ATTR: loupe
+  COMMIT_SHA: 264a395e7fdb3d32c47867b8a7bc0225ccffb066
 jobs:
   build:
     runs-on: ubuntu-24.04-arm
